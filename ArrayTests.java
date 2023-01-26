@@ -12,7 +12,20 @@ public class ArrayTests {
 
   @Test
   public void testReversed() {
-    int[] input1 = { };
+    int[] input1 = { }; 
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+
+  @Test
+  public void testReversedBigArray() {
+    int[] input2 = { 7,5,3 }; 
+    assertArrayEquals(new int[]{ 3, 5, 7 }, ArrayExamples.reversed(input2));
+  }
+
+  @Test
+  public void testReverseInPlaceArray() {
+    int[] input3 = { 2,3 }; 
+    ArrayExamples.reverseInPlace(input3);
+    assertArrayEquals(new int[]{ 3,2 }, input3);
   }
 }
