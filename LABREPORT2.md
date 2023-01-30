@@ -1,4 +1,4 @@
-# Lab Report 2 by Kenneth Nguyen, PID A17458399#
+# Lab Report 2 by Kenneth Nguyen, PID A17458399
 ## Table of Contents
 1. Web Server "StringServer" implementation
 2. A Bug from Lab 3
