@@ -45,18 +45,16 @@ Let's examine this bug in the `ArrayExamples.reversed()` method.
 Let's fix our code.
 
 ![(Screenshot of our failed reversed method](./reversed2SS.jpg)
+> Our old code.
 
-Our old code.
-
-> In reversed(), the bug is that we are replacing the old array values with new, null values in newArray. Instead, we want to vice versa the process; replace the newArray values with all of the values of the old value, then return newArr as the copy of arr, which will replace it in the method call.
+In reversed(), the bug is that we are replacing the old array values with new, null values in newArray. Instead, we want to vice versa the process; replace the newArray values with all of the values of the old value, then return newArr as the copy of arr, which will replace it in the method call.
 
 ![(Screenshot of our fixed reversed method](./reversed3SS.jpg)
+> Our new code.
 
-Our new code.
 
 ![(Screenshot of our Passed Tests](./reversed4SS.jpg)
-
-Our tests pass now, and this is because our indexing bug was fixed.
+> Our tests pass now, and this is because our indexing bug was fixed.
 
 ## Part 3: What I Learned from Lab 2
 
