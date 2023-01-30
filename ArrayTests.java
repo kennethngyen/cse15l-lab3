@@ -24,8 +24,29 @@ public class ArrayTests {
 
   @Test
   public void testReverseInPlaceArray() {
-    int[] input3 = { 2,3 }; 
+    int[] input3 = { 2,3,5,7,7,7 }; 
     ArrayExamples.reverseInPlace(input3);
-    assertArrayEquals(new int[]{ 3,2 }, input3);
+    assertArrayEquals(new int[]{ 7,7,7,5,3,2 }, input3);
+  }
+
+  @Test
+  public void testAverageWithoutLowest2Vars() {
+    double[] input4 = { 7.0, 8.0 }; 
+    double avg = ArrayExamples.averageWithoutLowest(input4);
+    assertEquals(8.0, avg,0.0001);
+  }
+
+  @Test
+  public void testAverageWithoutLowest3Vars() {
+    double[] input4 = { 1.0, 2.0, 3.0 }; 
+    assertEquals(2.5, ArrayExamples.averageWithoutLowest(input4),
+        0.0001);
+  }
+
+  @Test
+  public void testAverageWithoutLowest1Var() {
+    double[] input4 = { 7.0}; 
+    double avg = ArrayExamples.averageWithoutLowest(input4);
+    assertEquals(0.0, avg,0.0001);
   }
 }
